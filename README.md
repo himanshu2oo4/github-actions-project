@@ -1,6 +1,6 @@
 # project workflow
 
-'''
+
 git repo 
 vm as runner
 ci/cd 
@@ -11,4 +11,3 @@ ci/cd
     - deploy to k8's 
 
 
-'''
