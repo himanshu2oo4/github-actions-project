@@ -58,5 +58,11 @@ jobs:
           name: trivy-json-report
           path: trivy-result.json
           retention-days: 30
+       - name: git-leaks-installation 
+         run: sudo apt install gitleaks -y 
+       - name: git leaks scan 
+         run: gitleaks detect source . -r gitleaks-report.json -f json
+      
+      
              
       
