@@ -131,13 +131,6 @@ jobs:
     steps: 
         
         - uses: actions/checkout@v6
-        - name: Installing docker 
-          run: | 
-            sudo apt update -y 
-            sudo apt install docker.io -y  
-            sudo usermod -aG docker $USER 
-            sudo newgrp docker
-            
         - name: downloads the jar artifacts
           uses: actions/download-artifact@v4 
           with: 
