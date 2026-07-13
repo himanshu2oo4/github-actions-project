@@ -52,9 +52,9 @@ jobs:
           exit-code: "1"
           format: 'json'
           output: "trivy-result.json"
-      - name: Upload Trivy report
-        uses: actions/upload-artifact@v4
-        with: 
+       - name: Upload Trivy report
+         uses: actions/upload-artifact@v4
+         with: 
           name: trivy-json-report
           path: trivy-result.json
           retention-days: 30
