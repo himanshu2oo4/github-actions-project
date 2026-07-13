@@ -145,7 +145,7 @@ jobs:
             path: app 
 
         - name: Login to docker hub 
-          uses: actions/login-action@v4 
+          uses: actions/login-action@v3
           with: 
             username: ${{ vars.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_TOKEN }}
